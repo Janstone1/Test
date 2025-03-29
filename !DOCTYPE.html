@@ -1,0 +1,41 @@
+// agreement.html (Agreement Page)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agreement Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Agreement</h1>
+    </header>
+    <div class="container">
+        <p>Please read and agree to the terms before proceeding.</p>
+        
+        <h3>Relevant Laws:</h3>
+        <ul>
+            <li><a href="https://www.sprm.gov.my/admin/files/sprm/assets/pdf/penguatkuasaan/akta-pencegahan-rasuah1997-bi.pdf" target="_blank">Anti-Corruption Act 1997 (Act 575)</a></li>
+            <li><a href="https://toolsfortransformation.net/wp-content/uploads/2017/03/Malaysian-Law-Anti-Trafficking-in-Person-Smuggling-of-Migrants-ATIPSOM-2.pdf" target="_blank">Anti-Trafficking in Persons and Anti-Smuggling of Migrants Act 2007 (Act 670)</a></li>
+            <li><a href="https://antislaverylaw.ac.uk/wp-content/uploads/2019/08/Malaysia-Child-Act-1.pdf" target="_blank">Child Act 2001 (Act 611)</a></li>
+            <li><a href="https://eakta.mohr.gov.my/assets/pdf/akta_perburuhan/Act%20350%20-%20Children%20and%20Young%20Persons%20(Employment)%20Act%201966.pdf" target="_blank">Children and Young Persons (Employment) Act 1966 (Act 350)</a></li>
+            <li><a href="https://www.ssm.com.my/pages/legal_framework/document/act%20777%20reprint.pdf" target="_blank">Companies Act 2016 (Act 777)</a></li>
+        </ul>
+
+        <input type="checkbox" id="agreeCheckbox"> I agree to the terms and conditions
+        <br><br>
+        <a href="confirmation.html">
+            <button id="proceedButton" class="button" disabled>Proceed</button>
+        </a>
+    </div>
+    <footer>
+        <p>&copy; 2025 Agreement Page. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById("agreeCheckbox").addEventListener("change", function() {
+            document.getElementById("proceedButton").disabled = !this.checked;
+        });
+    </script>
+</body>
+</html>
